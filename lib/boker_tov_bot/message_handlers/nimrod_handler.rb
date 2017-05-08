@@ -6,6 +6,7 @@ module BokerTovBot
       def initialize(options = {})
         @regex = /.*(נימי|נמרוד|נימרוד|ניסים|נסים).*/mi
         @responses = ["פרושיאנטה", "רדיוהד", "סורי נרדמתי"]
+        super(options)
       end
 
       def match?(message)
@@ -13,7 +14,9 @@ module BokerTovBot
       end
 
       def response(message)
-        [:text, @responses.sample]
+        reply_with_probability(0.5) do
+          [:text, @responses.sample]
+        end
       end
     end
   end
