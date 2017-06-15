@@ -2,10 +2,10 @@ require 'boker_tov_bot/message_handlers/base_handler'
 
 module BokerTovBot
   module MessageHandlers
-    class NimrodHandler < BaseHandler
+    class AmitoHandler < BaseHandler
       def initialize(options = {})
         @regex = /.*(גולדברג|עמית|עמיתו).*/mi
-        @responses = ["¯\_(ツ)_/¯", "🙆"]
+        @responses = ["¯\_(ツ)_/¯", "🙆" ]
         super(options)
       end
 
