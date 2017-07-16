@@ -5,7 +5,7 @@ module BokerTovBot
     class AmitoHandler < BaseHandler
       def initialize(options = {})
         @regex = /.*(גולדברג|עמית|עמיתו).*/mi
-        @responses = ["¯\_(ツ)_/¯", "🙆" ]
+        @responses = ["¯\_(ツ)_/¯", “רדיוהד מופעים פה מחר” ]
         super(options)
       end
 

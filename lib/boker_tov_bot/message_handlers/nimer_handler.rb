@@ -14,7 +14,7 @@ module BokerTovBot
       end
 
       def response(message)
-        reply_with_probability(0.3) do
+        reply_with_probability(0.5) do
           [:text, @responses.sample]
         end
       end
